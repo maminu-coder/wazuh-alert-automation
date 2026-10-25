@@ -26,8 +26,16 @@ if __name__ == "__main__":
     '''
     This is a test function to test the extract_alert_fields and is_public_ip functions. It loads two sample alert JSON files and extracts the important information from them. It also tests the is_public_ip function with various IP addresses to check if they are public or not.
     '''
-    # print(extract_alert_fields(load_alert('sample_alert.json')))
-    # print(extract_alert_fields(load_alert('sample_alert2.json')))
+    
+    
+    
+    assert extract_alert_fields(load_alert('sample_alert.json')) == {
+        "description": "sshd: attempt to login using a non-existent user",
+        "level": 5,
+        "agent": "ubuntu-lab",
+        "srcip": "203.0.113.45"
+    }
+    assert extract_alert_fields(load_alert('sample_alert2.json')) == {'description': 'Host-based anomaly detection event (rootcheck)', 'level': 7, 'agent': 'ubuntu-lab', 'srcip': None}
     assert is_public_ip(None) is False
     assert is_public_ip('192.168.1.5') is False 
     assert is_public_ip('8.8.8.8') is True
