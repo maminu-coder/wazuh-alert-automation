@@ -1,0 +1,6 @@
+{
+  "timestamp": "2026-10-23T17:00:00.000+0000",
+  "rule": {"id": "5710", "level": 5, "description": "sshd: attempt to login using a non-existent user"},
+  "agent": {"name": "ubuntu-lab"},
+  "data": {"srcip": "203.0.113.45"}
+}

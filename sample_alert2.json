@@ -1,0 +1,5 @@
+{
+  "timestamp": "2026-10-23T18:00:00.000+0000",
+  "rule": {"id": "510", "level": 7, "description": "Host-based anomaly detection event (rootcheck)"},
+  "agent": {"name": "ubuntu-lab"}
+}
