@@ -7,7 +7,7 @@ A Python tool that turns raw Wazuh alert JSON into a clean, structured summary, 
 Work in progress. Step 1 of 5 is complete.
 
 - [x] Parse an alert and extract key fields, handling missing data safely
-- [ ] Check whether the source IP is public
+- [x] Check whether the source IP is public
 - [ ] Look up IP reputation (AbuseIPDB)
 - [ ] Apply a simple triage rule
 - [ ] Send a notification (Slack/Discord) and run on live alerts from my lab
